@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript Pounds to Kilograms Converter</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <h1>Javascript Pounds to Kilograms Converter</h1>
+  <label for="pounds">Enter the pounds</label><br />
+  <input type="text" id="pounds" /><br />
+  <input type="button" value="Convert" id="convert" onclick="convert()" />
+  <div id="kilograms"></div>
+
+  <script type="text/javascript">
+    function convert() {
+        var pounds = document.getElementById('pounds').value;
+        var kilograms = pounds / 2.205;
+        document.getElementById('kilograms').innerHTML = "<p>" + pounds + " pounds = " + kilograms + " kilograms</p>";
+    }
+  </script>
+
+</body>
+
+</html>
